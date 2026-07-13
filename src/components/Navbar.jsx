@@ -29,11 +29,9 @@ export default function Navbar() {
 
   const links = [
     { label: 'Home', id: 'home' },
-    { label: 'Services', id: 'services' },
-    { label: 'About', id: 'about' },
     { label: 'Process', id: 'process' },
     { label: 'Testimonials', id: 'testimonials' },
-    { label: 'FAQ', id: 'faq' },
+    { label: 'Contact', id: 'contact' },
   ]
 
   return (

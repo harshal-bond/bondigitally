@@ -1,14 +1,9 @@
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Services from './components/Services'
-import Stats from './components/Stats'
-import About from './components/About'
-import Values from './components/Values'
-import WhyUs from './components/WhyUs'
 import Process from './components/Process'
+import ScrollStatements from './components/ScrollStatements'
 import Testimonials from './components/Testimonials'
-import FAQ from './components/FAQ'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import Particles from './components/Particles'
@@ -50,7 +45,7 @@ export default function App() {
     // Use MutationObserver to catch dynamically rendered cards
     const applyGlow = () => {
       document
-        .querySelectorAll('.service-card, .stat-card, .value-card, .testimonial-card')
+        .querySelectorAll('.testimonial-card, .process-step')
         .forEach((card) => {
           card.removeEventListener('mousemove', handleMouseMove)
           card.removeEventListener('mouseleave', handleMouseLeave)
@@ -70,14 +65,9 @@ export default function App() {
       <Particles />
       <Navbar />
       <Hero />
-      <Services />
-      <Stats />
-      <About />
-      <Values />
-      <WhyUs />
       <Process />
+      <ScrollStatements />
       <Testimonials />
-      <FAQ />
       <CTA />
       <Footer />
       <BackToTop />
