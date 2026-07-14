@@ -35,7 +35,7 @@ export default function App() {
       const rect = card.getBoundingClientRect()
       const x = e.clientX - rect.left
       const y = e.clientY - rect.top
-      card.style.background = `radial-gradient(circle 200px at ${x}px ${y}px, rgba(124, 58, 237, 0.06), var(--color-surface))`
+      card.style.background = `radial-gradient(circle 200px at ${x}px ${y}px, rgba(102, 209, 147, 0.06), var(--color-surface))`
     }
 
     const handleMouseLeave = (e) => {
